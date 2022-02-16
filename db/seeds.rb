@@ -11,7 +11,9 @@ food_categories = %w[chinese italian japanese french belgian]
 puts 'Starting Seeding Restaurants!'
 
 5.times do
-  Restaurant.create(address: Faker::Address.street_name, name: Faker::Restaurant.name, category: food_categories.sample )
+  Restaurant.create(address: Faker::Address.street_name,
+                    name: Faker::Restaurant.name,
+                    category: food_categories.sample)
 end
 
 puts 'all done!'
